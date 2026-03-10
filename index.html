@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Bienestar - Jessica Ocampo</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #27ae60;
+            --light: #f4f7f6;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #34495e);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        h1, h2 { color: var(--primary); }
+        .highlight { color: var(--accent); font-weight: bold; }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .plan-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .plan-table th, .plan-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .plan-table th { background-color: var(--primary); color: white; }
+
+        .cta-section {
+            text-align: center;
+            padding: 40px;
+        }
+        .btn {
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+        .btn:hover { transform: scale(1.05); }
+        
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienestar Integral y Alto Rendimiento Corporativo</h1>
+    <p>Presentado por: <strong>Jessica Ocampo Fisioterapeuta & Equipo Interdisciplinar</strong></p>
+</header>
+
+<div class="container">
+    <section class="card">
+        <h2>El Reto: El Costo del Malestar</h2>
+        <p>El ausentismo laboral y las lesiones osteomusculares representan una fuga de capital silenciosa[cite: 7]. 
+        Un empleado con dolor físico o estrés crónico reduce su productividad entre un <span class="highlight">30% y 40%</span>[cite: 8].</p>
+    </section>
+
+    <section class="card">
+        <h2>Nuestra Solución: Modelo Biopsicosocial</h2>
+        <p>Integramos la <strong>Salud Física (Fisioterapia)</strong> con la <strong>Salud Mental (Psicología)</strong> para atacar el problema de raíz[cite: 10].</p>
+        
+        <div class="grid">
+            <div>
+                <h3>Fisioterapia</h3>
+                <ul>
+                    <li>Descargas Express y Manejo del Dolor[cite: 13].</li>
+                    <li>Reeducación Postural[cite: 14].</li>
+                    <li>Prevención de Lesiones[cite: 15].</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Psicología</h3>
+                <ul>
+                    <li>Gestión del Estrés y Cortisol[cite: 19].</li>
+                    <li>Comunicación Asertiva[cite: 18].</li>
+                    <li>Liderazgo Empático[cite: 20].</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Paquetes Sugeridos</h2>
+        <table class="plan-table">
+            <thead>
+                <tr>
+                    <th>Nivel</th>
+                    <th>Servicios Incluidos</th>
+                    <th>Objetivo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Plan Esencial</strong></td>
+                    <td>Pausas Activas + Taller de Estrés[cite: 23].</td>
+                    <td>Cumplimiento normativo[cite: 23].</td>
+                </tr>
+                <tr>
+                    <td><strong>Plan Productividad</strong></td>
+                    <td>Descargas Express + Taller de Comunicación[cite: 23].</td>
+                    <td>Mejora del clima y dolor[cite: 23].</td>
+                </tr>
+                <tr>
+                    <td><strong>Plan Alto Rendimiento</strong></td>
+                    <td>Fisioterapia In-situ + Coaching para Líderes[cite: 23].</td>
+                    <td>Blindar la productividad y retener talento[cite: 23].</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="cta-section">
+        <h2>¿Listo para optimizar su capital humano?</h2>
+        <p>Invertir en bienestar no es un gasto, es una estrategia de rentabilidad[cite: 29].</p>
+        <a href="#" class="btn">¡Agendar una Consultoría!</a>
+    </section>
+</div>
+
+</body>
+</html>
